@@ -1,38 +1,101 @@
-.App {
+/* src/App.css */
+
+/* Reset default margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the navigation */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Style the content */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Style the home page */
+.home-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the tenants list */
+.tenants-list {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tenants-list li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style the leases list */
+.leases-list {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.leases-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the maintenance requests list */
+.maintenance-requests-list {
+  text-align: center;
+}
+
+.maintenance-requests-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
 }
